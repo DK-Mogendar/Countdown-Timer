@@ -1,10 +1,12 @@
 /* Syling der Steite*/
 
 .titel {font-size: +50px;
+
   background-color:rgb(255, 0, 0);
   display: inline-block;
-  justify-content: center;
+  text-align: center; 
 }
+
 :root {
   --smaller: 0.75;
 }
@@ -19,9 +21,10 @@ html, body {
   height: 100%;
   margin: 20;
 }
-
+/*hintergrund definition*/
 body {
   background-color: #ffd54f;
+  background-image:;
   display: grid;
   font-family: -Roboto, apple-system, 
     BlinkMacSystemFont, 
@@ -32,6 +35,14 @@ body {
     "Helvetica Neue", 
     sans-serif;
 }
+html { 
+  background: url(assets/img/wauw.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*ende*/
   
   .container {
     color: #333;

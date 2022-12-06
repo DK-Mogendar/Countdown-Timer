@@ -1,3 +1,5 @@
+//hier wird die Zeit definiert millisec=sec=min usw
+
 (function () {
   const second = 1000,
         minute = second * 60,
@@ -5,8 +7,8 @@
         day = hour * 24;
        
 
-  //Ich füge diesen Abschnitt hinzu, damit ich diesen Stift nicht jedes Jahr aktualisieren muss :-)
-  // Entfernen Sie dies, wenn Sie es nicht brauchen
+  //Ich füge diesen Abschnitt hinzu, damit ich diesen teil nicht jedes Jahr aktualisieren muss :-)
+ 
   let today = new Date(),
       dd = String(today.getDate()).padStart(2, "0"),
       mm = String(today.getMonth() + 1).padStart(2, "0"),
@@ -19,8 +21,7 @@
   if (today > birthday) {
     birthday = dayMonth + nextYear;
   }
-  //ende
-  
+  //hier wird das datum generiert
   const countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
 
@@ -42,3 +43,4 @@
         //seconds
       }, 0)
   }());
+  
