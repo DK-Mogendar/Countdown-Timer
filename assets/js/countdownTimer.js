@@ -14,7 +14,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "12/08/",
+      dayMonth = "12/09/",
       birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
@@ -23,7 +23,7 @@
   }
   //hier wird das datum generiert
   const countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
+      z = setInterval(function() {    
 
         const now = new Date().getTime(),
               distance = countDown - now;

@@ -21,9 +21,10 @@
 </head>
 <body>
  <!--Titelbereich-->   
-    <div>
+    <div class="d-flex justify-content-center">
         <h1 class="titel">Countdown-Timer-Daniel</h1>
     </div>
+
  <!--Timerbereich mit Titel-->  
     <div class="zeit"> 
         <div class="container">
@@ -41,5 +42,25 @@
         <img src="assets/img/blob-1692452.png" class="img-fluid" alt="meinLogo">
     </div>
 
+<!--Button vorbereitung-->
+<div class="button" role="alert">
+    <script>
+        /* b) Vorbereitung: Lege einen "Start" Button an.
+            Aufgabe: Auf Mausklick wechsle die Beschriftung des Buttons auf "Stop",
+            wenn vorher "Start" sichtbar war - und umgekehrt (toggle).
+            */
+        function toggleYesNo(element){
+            if (element.innerText === "Stop") {
+                element.innerText = "Start";
+            }
+            else { // element.innerText ist "Stop"
+                element.innerText = "Stop";
+            }
+        }
+    </script>
+    <button type="button"
+            class="btn btn-danger"
+            onclick="toggleYesNo(this);">Start</button>
+</div>
 
 </html>
