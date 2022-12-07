@@ -15,14 +15,14 @@
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
       dayMonth = "12/09/",
-      birthday = dayMonth + yyyy;
+      Finalday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
-  if (today > birthday) {
-    birthday = dayMonth + nextYear;
+  if (today > Finalday) {
+    Finalday = dayMonth + nextYear;
   }
   //hier wird das datum generiert
-  const countDown = new Date(birthday).getTime(),
+  const countDown = new Date(Finalday).getTime(),
       z = setInterval(function() {    
 
         const now = new Date().getTime(),

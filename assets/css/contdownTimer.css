@@ -6,25 +6,23 @@
   text-align: center;
   color: rgb(216, 166, 18); 
 }
-.zeit{ background-image: url("../img/Holzplatte.jpg");
-}
-:root {
-  --smaller: 0.75;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {background-image: url("../img/Holzplatte.jpg");
+#KnopfTimer {  background-image: url("../img/HolzSchön.jpg");
   background-size: cover;
-  height: 100%;
+  text-align: center;
+  color: rgb(216, 166, 18); 
+  border: 0px;
+
+}
+
+/*hintergrund definition*/
+html {background-image: url("../img/HolzPlatte2.jpg");
+  background-size: cover;
   margin: 20;
 }
-/*hintergrund definition*/
+
+
 body {
+  background-image: url("../img/HolzPlatte2.jpg");
   background-color: #1a1602;
   display: grid;
   font-family: -Roboto, apple-system, 
@@ -36,19 +34,14 @@ body {
     "Helvetica Neue", 
     sans-serif;
 }
-html { 
-  background: url(assets/img/wauw.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 /*ende*/
   
   .container {
     color: rgb(216, 166, 18);
     margin: 0 auto;
     text-align: center;
+    background-image: url("../img/Holzplatte.jpg");
   }
   
   li {

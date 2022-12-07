@@ -39,28 +39,65 @@
     </div> 
  <!--mein Logo-->        
     <div>
-        <img src="assets/img/blob-1692452.png" class="img-fluid" alt="meinLogo">
+        <img src="assets/img/blob-1692452.png" 
+             class= container-sm 
+             alt="meinLogo">
     </div>
 
-<!--Button vorbereitung-->
-<div class="button" role="alert">
+<!--Button CrisButton-->
+
+<div id="KnopfTimer" class="alert alert-success" role="alert">
+    
+    <h1>Hundert Sekunden Timer</h1>
+
     <script>
-        /* b) Vorbereitung: Lege einen "Start" Button an.
-            Aufgabe: Auf Mausklick wechsle die Beschriftung des Buttons auf "Stop",
-            wenn vorher "Start" sichtbar war - und umgekehrt (toggle).
-            */
-        function toggleYesNo(element){
-            if (element.innerText === "Stop") {
-                element.innerText = "Start";
+        var count;                  // Die Varialbel cost
+        var maxCount = 100;         // später vieleicht konfigurieren
+        var intervalId;             // Wird zum stoppen von setInterval() verwendet
+
+        function startCountdown(){
+            stopCountdown();
+            setDisplay(maxCount);
+            count = maxCount;       // counter in Anfangszustand setzten.
+
+            // Verwedndet die Referenz ùpdateCouter? , um die Funktion für später zu registrieren
+            intervalId = setInterval(updateCounter, 1000); // Jede Sekunde: aktualisiert den Zähler
+        }
+
+        function setDisplay(info) { //info nur ein beispiel
+            document.getElementById("display").innerText = info;
+        }
+        function stopCountdown() {
+            // JavaSrcript Funktion ClearIntervall() aufrufen.
+            clearInterval(intervalId);
+        }
+
+        function updateCounter(){
+            count = count - 1;      //Kurzform: count--;
+
+            // es stopt das updaten
+            if (count === 0) {
+                //Countdown ist vertig
+                setDisplay('GO!');
+                startCountdown();
             }
-            else { // element.innerText ist "Stop"
-                element.innerText = "Stop";
+            else {
+                //zeigt aktuellen stand 'count' an
+                setDisplay(count);
             }
         }
     </script>
+
+    <p id="display">&nbsp;</p>
+
     <button type="button"
-            class="btn btn-danger"
-            onclick="toggleYesNo(this);">Start</button>
+            class="btn btn-warning"
+            id="startButton"
+            onclick="startCountdown();">Start</button>
+
+    <button type="button"
+            class="btn btn-warning"
+            id="startButton"
+            onclick="stopCountdown();">Stop</button>
 </div>
 
-</html>
