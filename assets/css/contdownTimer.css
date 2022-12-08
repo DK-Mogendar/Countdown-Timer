@@ -9,7 +9,10 @@
   color: rgb(216, 166, 18); 
 }
 #display {font-size: +34px;
+}
 
+#countdown {
+  padding: 5px;
 }
 
 /*hintergrund + definition des Pause Timer*/
