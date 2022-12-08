@@ -22,3 +22,4 @@ Retrospektieve in Googel Drive:
 https://docs.google.com/presentation/d/1yf3SIEf5K4xl0aCBYyPLygnHbgXeCSOsXGYGrgGx7ZE/edit#slide=id.p
 
 PS: habe im CountdownTimer zehn Tag mehr als der Offizielle abgabe Termin. So das er noch läuft bei der Begutachtung.
+Offizielles Ende 08.12.2022 um 16:15
