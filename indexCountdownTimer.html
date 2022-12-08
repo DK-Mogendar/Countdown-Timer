@@ -15,9 +15,9 @@
     <script src="assets/js/countdownTimer.js" defer></script>
 <!--css-->
     <link rel="stylesheet" href="assets/css/contdownTimer.css"/>
-<!--stylesheet flipp uhr-->
+<!--stylesheet flipp uhr
     <link rel="stylesheet" href="css/flipdown/flipdown.css" />
-    <script src="js/flipdown/flipdown.js"></script>
+    <script src="js/flipdown/flipdown.js"></script>-->
 </head>
 <body>
  <!--Titelbereich-->   
@@ -30,7 +30,7 @@
         <div class="container">
             <h1 id="headline">Countdown bis zum ende der Aufgabe</h1>
             <div id="countdown">
-            <ul>
+            <ul> <!--giebt die anzeige des Timers aus (Tag, usw mit Timer)-->
                 <li><span id="days"></span>Tage</li>
                 <li><span id="hours"></span>Stunden</li>
                 <li><span id="minutes"></span>Minuten</li>
@@ -44,15 +44,14 @@
              alt="meinLogo">
     </div>
 
-<!--Button CrisButton-->
+<!--Button CrisButton JS teiln in HTML eingebunden-->
+<div id="KnopfTimer" class="alert alert-success" role="alert"> 
 
-<div id="KnopfTimer" class="alert alert-success" role="alert">
-    
-    <h1>Hundert Sekunden Timer</h1>
+    <h1>Pause Timer in Sekunden Timer</h1>
 
     <script>
         var count;                  // Die Varialbel cost
-        var maxCount = 100;         // später vieleicht konfigurieren
+        var maxCount = 900;         // später vieleicht konfigurieren momentan auf 15min in Sekunden
         var intervalId;             // Wird zum stoppen von setInterval() verwendet
 
         function startCountdown(){
@@ -86,6 +85,17 @@
                 setDisplay(count);
             }
         }
+
+        function clearCoutdown () {
+            //macht einen reset zu 100 sec
+            if (seconds < 100){
+                startCountdown();
+            }
+
+
+            //TODO start timer again
+            startCountdown()
+        }
     </script>
 
     <p id="display">&nbsp;</p>
@@ -102,7 +112,7 @@
 
             <button type="button"
             class="btn btn-warning"
-            id="butten+-"
-            onclick="stopCountdown();">Stop</button>
+            id="resetButten"
+            onclick="clearCoutdown()">Reset</button>
 </div>
 
