@@ -3,11 +3,16 @@
   background-image: url("../img/Holzplatte.jpg");
   border-radius: 25px;
   border: 0px;
+  padding: 4px;
 
   text-align: center;
   color: rgb(216, 166, 18); 
 }
-/*hintergrund + definition des Pause Timers*/
+#display {font-size: +34px;
+
+}
+
+/*hintergrund + definition des Pause Timer*/
 #KnopfTimer {  background-image: url("../img/HolzSchön.jpg");
   background-size: cover;
   text-align: center;
