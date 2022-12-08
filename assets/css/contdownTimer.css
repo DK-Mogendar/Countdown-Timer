@@ -7,7 +7,7 @@
   text-align: center;
   color: rgb(216, 166, 18); 
 }
-/*hintergrund + definition des Knopf Timers*/
+/*hintergrund + definition des Pause Timers*/
 #KnopfTimer {  background-image: url("../img/HolzSchön.jpg");
   background-size: cover;
   text-align: center;

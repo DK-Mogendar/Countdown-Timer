@@ -31,13 +31,13 @@
           document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second); //berechnet die Sekunden
 
 // etwas später tun, wenn das Datum erreicht ist
-        if (distance < 30) {                                                          
+        if (distance < 30000) {                                                          
           document.getElementById("headline").innerText = "Ende der Aufgabe!!!"; //giebt den Text Ende der A... aus
           document.getElementById("countdown").style.display = "none";           //sagt wie der Countdown ausgegeben wird
           document.getElementById("content").style.display = "block";            //sagt wie der contend ausgegeben wird
           clearInterval(x);
         }
 //seconds
-      },0)
+      },0)  //ausgabe genauikeit gleich null was heisst das auf die millisekunde genau den Timer ausfürt.
   }());
   
