@@ -30,7 +30,7 @@
         <div class="container">
             <h1 id="headline">Countdown bis zum ende der Aufgabe</h1>
             <div id="countdown">
-            <ul> <!--giebt die anzeige des Timers aus (Tag, usw mit Timer)-->
+            <ul>
                 <li><span id="days"></span>Tage</li>
                 <li><span id="hours"></span>Stunden</li>
                 <li><span id="minutes"></span>Minuten</li>
@@ -44,14 +44,15 @@
              alt="meinLogo">
     </div>
 
-<!--Button CrisButton JS teiln in HTML eingebunden-->
-<div id="KnopfTimer" class="alert alert-success" role="alert"> 
+<!--Button CrisButton-->
 
-    <h1>Pause Timer in Sekunden Timer</h1>
+<div id="KnopfTimer" class="alert alert-success" role="alert">
+    
+    <h1>Hundert Sekunden Timer</h1>
 
     <script>
         var count;                  // Die Varialbel cost
-        var maxCount = 900;         // später vieleicht konfigurieren momentan auf 15min in Sekunden
+        var maxCount = 100;         // später vieleicht konfigurieren
         var intervalId;             // Wird zum stoppen von setInterval() verwendet
 
         function startCountdown(){
@@ -87,7 +88,7 @@
         }
 
         function clearCoutdown () {
-            //macht einen reset zu 100 sec
+            //TODO reset to 100 sec
             if (seconds < 100){
                 startCountdown();
             }
@@ -116,3 +117,5 @@
             onclick="clearCoutdown()">Reset</button>
 </div>
 
+</body>
+</html>
