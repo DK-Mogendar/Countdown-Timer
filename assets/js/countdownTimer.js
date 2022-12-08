@@ -10,7 +10,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"), //definiert die Monats ausgabe als String
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,    //zählt wen ein neues Jahr erreicht wird eines dazu
-      dayMonth = "12/09/",    // definiert die Monats und Tages Anzeige
+      dayMonth = "12/18/",    // definiert die Monats und Tages Anzeige
       exactTime = " 16:15:00" //definiert die genaue Uhrzeit
       Finalday = dayMonth + yyyy + exactTime; //definiert die Ausgabe
   
@@ -32,7 +32,7 @@
 
 // etwas später tun, wenn das Datum erreicht ist
         if (distance < 0) {                                                          
-          document.getElementById("headline").innerText = "Ende der Aufgabe!!!"; //giebt den Text Ende der A... aus
+          document.getElementById("headline").innerText = "!!!!!!!!!Ende der Aufgabe!!! "; //giebt den Text Ende der A... aus
           document.getElementById("countdown").style.display = "none";           //sagt wie der Countdown ausgegeben wird
           document.getElementById("content").style.display = "block";            //sagt wie der contend ausgegeben wird
           clearInterval(x);
